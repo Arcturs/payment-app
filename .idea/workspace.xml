@@ -5,43 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1100bd2d-0627-4a52-b410-2b129fe57b8e" name="Changes" comment="Создание двух сервисов">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/AnalysePaymentApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumConfig.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumTargetDatabaseProperties.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/dto/PaymentChangeLogRecord.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/entity/Statistic.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/listener/DebeziumListener.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/repository/StatisticRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/service/StatisticService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/resources/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/main/resources/offsets.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/analyse-payment/src/test/kotlin/ru/tbank/smartdata/analyse/payment/AnalysePaymentApplicationTests.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/ProcessPaymentApplication.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/entity/Payment.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/repository/PaymentRepository.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/service/PaymentService.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/src/main/resources/application.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/src/main/resources/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/process-payment/src/test/kotlin/ru/tbank/smartdata/process/payment/ProcessPaymentApplicationTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyse-payment/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/process-payment/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,11 +25,27 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/process-payment" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Arcturs"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Arcturs/payment-app.git",
+    "accountId": "e0393ba4-a722-4a0d-843f-0aefb81695db"
+  }
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
   <component name="ProjectId" id="2kLQsMSnXUTAzoFBiaGWutzUol8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -75,12 +58,20 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/a.sashina/IdeaProjects/payment-app",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "spring.configuration.checksum": "b2498c6676fce647b786b52fe7b705bb"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.ProcessPaymentApplication">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration name="AnalysePaymentApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="analyse-payment" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.tbank.smartdata.analyse.payment.AnalysePaymentApplication" />
@@ -112,8 +103,16 @@
       <option name="presentableId" value="Default" />
       <updated>1723060583418</updated>
       <workItem from="1723060585662" duration="1934000" />
-      <workItem from="1723106806334" duration="15941000" />
+      <workItem from="1723106806334" duration="16225000" />
     </task>
+    <task id="LOCAL-00001" summary="Создание двух сервисов">
+      <created>1723142832544</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723142832544</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -128,6 +127,10 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/analyse-payment" />
+      <path value="$PROJECT_DIR$/process-payment" />
+    </ignored-roots>
     <MESSAGE value="Создание двух сервисов" />
     <option name="LAST_COMMIT_MESSAGE" value="Создание двух сервисов" />
   </component>

@@ -1,0 +1,19 @@
+spring:
+  application.name: analyse-payment
+  sql.init.mode: always
+  datasource:
+    url: jdbc:postgresql://localhost:5434/statistic
+    username: postgres
+    password: password
+
+debezium:
+  target:
+    hostname: localhost
+    port: 5435
+    dbname: payment
+    username: debezium_reader
+    password: oj98gh
+
+logging:
+  level:
+    ru.tbank.smartdata.analyse.payment.listener: TRACE
