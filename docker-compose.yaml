@@ -1,0 +1,29 @@
+version: '3'
+services:
+  paymentDB:
+    image: postgres:15.1-alpine
+    ports:
+      - "5435:5432"
+    container_name: paymentDB
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: payment
+    volumes:
+      - paymentdb_data:/var/lib/postgresql/data
+
+  statisticDB:
+    image: postgres:15.1-alpine
+    ports:
+      - "5434:5432"
+    container_name: statisticDB
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: statistic
+    volumes:
+      - statisticdb_data:/var/lib/postgresql/data
+
+volumes:
+  paymentdb_data:
+  statisticdb_data:
