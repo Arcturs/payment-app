@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1100bd2d-0627-4a52-b410-2b129fe57b8e" name="Changes" comment="Создание двух сервисов">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyse-payment/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/process-payment/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumConfig.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumTargetDatabaseProperties.kt" beforeDir="false" afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumTargetDatabaseProperties.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyse-payment/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/analyse-payment/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyse-payment/src/main/resources/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init-db/statistic.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/ProcessPaymentApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/ProcessPaymentApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process-payment/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/process-payment/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process-payment/src/main/resources/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init-db/payment.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +25,7 @@
       <list>
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
+        <option value="Class" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -28,24 +34,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Arcturs"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Arcturs&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Arcturs/payment-app.git",
-    "accountId": "e0393ba4-a722-4a0d-843f-0aefb81695db"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Arcturs/payment-app.git&quot;,
+    &quot;accountId&quot;: &quot;e0393ba4-a722-4a0d-843f-0aefb81695db&quot;
   }
-}]]></component>
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2kLQsMSnXUTAzoFBiaGWutzUol8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -56,6 +62,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
+    "Kotlin.AnalysePaymentApplicationKt.executor": "Debug",
+    "Kotlin.ProcessPaymentApplicationKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -70,8 +79,25 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/init-db" />
+    </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.ProcessPaymentApplicationKt">
+    <configuration name="AnalysePaymentApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.tbank.smartdata.analyse.payment.AnalysePaymentApplicationKt" />
+      <module name="analyse-payment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProcessPaymentApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ru.tbank.smartdata.process.payment.ProcessPaymentApplicationKt" />
+      <module name="process-payment" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AnalysePaymentApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="analyse-payment" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.tbank.smartdata.analyse.payment.AnalysePaymentApplication" />
@@ -93,6 +119,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml" />
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.ProcessPaymentApplicationKt" />
+        <item itemvalue="Kotlin.AnalysePaymentApplicationKt" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -112,7 +157,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723142832544</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Создание двух сервисов">
+      <option name="closed" value="true" />
+      <created>1723144061602</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723144061602</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -133,5 +186,16 @@
     </ignored-roots>
     <MESSAGE value="Создание двух сервисов" />
     <option name="LAST_COMMIT_MESSAGE" value="Создание двух сервисов" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/listener/DebeziumListener.kt</url>
+          <line>38</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

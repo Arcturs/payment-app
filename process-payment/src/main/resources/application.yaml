@@ -1,6 +1,5 @@
 spring:
   application.name: process-payment
-  sql.init.mode: always
   datasource:
     url: jdbc:postgresql://localhost:5435/payment
     username: postgres

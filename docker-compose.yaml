@@ -9,8 +9,10 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: payment
+    command: [ "postgres", "-c", "wal_level=logical" ]
     volumes:
       - paymentdb_data:/var/lib/postgresql/data
+      - ./init-db/payment.sql:/docker-entrypoint-initdb.d/init.sql:ro
 
   statisticDB:
     image: postgres:15.1-alpine
@@ -21,8 +23,10 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
       POSTGRES_DB: statistic
+    command: [ "postgres", "-c", "wal_level=logical" ]
     volumes:
       - statisticdb_data:/var/lib/postgresql/data
+      - ./init-db/statistic.sql:/docker-entrypoint-initdb.d/init.sql:ro
 
 volumes:
   paymentdb_data:
