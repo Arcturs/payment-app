@@ -15,7 +15,7 @@ class DebeziumConfig(
     @Bean
     fun debeziumConfiguration(): io.debezium.config.Configuration =
         io.debezium.config.Configuration.create()
-            .with(ENGINE_NAME, "analyse-payment-connector")
+            .with(ENGINE_NAME, "analyse-payment-engine")
             .with(TOPIC_PREFIX, "analyse-payment-topic")
             .with(CONNECTOR_CLASS, "io.debezium.connector.postgresql.PostgresConnector")
             .with(OFFSET_STORAGE, "org.apache.kafka.connect.storage.FileOffsetBackingStore")

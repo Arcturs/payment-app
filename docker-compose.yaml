@@ -1,10 +1,10 @@
 version: '3'
 services:
-  paymentDB:
+  payment-db:
     image: postgres:15.1-alpine
     ports:
       - "5435:5432"
-    container_name: paymentDB
+    container_name: payment-db
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
@@ -14,11 +14,11 @@ services:
       - paymentdb_data:/var/lib/postgresql/data
       - ./init-db/payment.sql:/docker-entrypoint-initdb.d/init.sql:ro
 
-  statisticDB:
+  statistic-db:
     image: postgres:15.1-alpine
     ports:
       - "5434:5432"
-    container_name: statisticDB
+    container_name: statistic-db
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: password
@@ -27,6 +27,29 @@ services:
     volumes:
       - statisticdb_data:/var/lib/postgresql/data
       - ./init-db/statistic.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+  process-payment:
+    image: process-payment
+    container_name: process-payment
+    build:
+      context: process-payment/.
+    ports:
+      - "8080:8080"
+    depends_on:
+      - payment-db
+    environment:
+      TESTING_ENTITIES_AMOUNT: 10
+
+  analyse-payment:
+    image: analyse-payment
+    container_name: analyse-payment
+    build:
+      context: analyse-payment/.
+    ports:
+      - "8081:8080"
+    depends_on:
+      - payment-db
+      - statistic-db
 
 volumes:
   paymentdb_data:

@@ -4,3 +4,10 @@ spring:
     url: jdbc:postgresql://localhost:5435/payment
     username: postgres
     password: password
+
+testing:
+  amount: ${TESTING_ENTITIES_AMOUNT:10}
+
+logging:
+  level:
+    ru.tbank.smartdata.process.payment.service.DataGenerationService: TRACE

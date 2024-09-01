@@ -4,16 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1100bd2d-0627-4a52-b410-2b129fe57b8e" name="Changes" comment="Создание двух сервисов">
+    <list default="true" id="1100bd2d-0627-4a52-b410-2b129fe57b8e" name="Changes" comment="Правка неисправностей">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumConfig.kt" beforeDir="false" afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumConfig.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumTargetDatabaseProperties.kt" beforeDir="false" afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/config/DebeziumTargetDatabaseProperties.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyse-payment/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/analyse-payment/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analyse-payment/src/main/resources/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init-db/statistic.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/service/StatisticService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/service/StatisticService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process-payment/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/process-payment/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/ProcessPaymentApplication.kt" beforeDir="false" afterPath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/ProcessPaymentApplication.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/service/PaymentService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/process-payment/src/main/kotlin/ru/tbank/smartdata/process/payment/service/PaymentService.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/process-payment/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/process-payment/src/main/resources/application.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/process-payment/src/main/resources/init.sql" beforeDir="false" afterPath="$PROJECT_DIR$/init-db/payment.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +46,10 @@
     &quot;accountId&quot;: &quot;e0393ba4-a722-4a0d-843f-0aefb81695db&quot;
   }
 }</component>
+  <component name="KubernetesApiPersistence">{}</component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -62,15 +66,20 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.docker-compose.yaml.payment-db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yaml.statistic-db: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yaml: Compose Deployment.executor": "Run",
-    "Kotlin.AnalysePaymentApplicationKt.executor": "Debug",
+    "Kotlin.AnalysePaymentApplicationKt.executor": "Run",
     "Kotlin.ProcessPaymentApplicationKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.AnalysePaymentApplication (1).executor": "Run",
+    "Spring Boot.ProcessPaymentApplication (1).executor": "Run",
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/a.sashina/IdeaProjects/payment-app",
+    "run.configurations.included.in.services": "true",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "spring.configuration.checksum": "b2498c6676fce647b786b52fe7b705bb"
   }
@@ -83,7 +92,16 @@
       <recent name="$PROJECT_DIR$/init-db" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.ProcessPaymentApplicationKt">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ProcessPaymentApplication (1)">
     <configuration name="AnalysePaymentApplicationKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ru.tbank.smartdata.analyse.payment.AnalysePaymentApplicationKt" />
       <module name="analyse-payment" />
@@ -112,6 +130,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProcessPaymentApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="process-payment" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.tbank.smartdata.process.payment.ProcessPaymentApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ProcessPaymentApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="process-payment" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.tbank.smartdata.processpayment.ProcessPaymentApplication" />
@@ -120,7 +145,9 @@
       </method>
     </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
-      <deployment type="docker-compose.yml" />
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
       <method v="2" />
     </configuration>
     <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
@@ -131,13 +158,48 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yaml.payment-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="payment-db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yaml.statistic-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="statistic-db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yaml.statistic-db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml.payment-db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
         <item itemvalue="Kotlin.ProcessPaymentApplicationKt" />
         <item itemvalue="Kotlin.AnalysePaymentApplicationKt" />
-        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.300" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -149,6 +211,12 @@
       <updated>1723060583418</updated>
       <workItem from="1723060585662" duration="1934000" />
       <workItem from="1723106806334" duration="16225000" />
+      <workItem from="1723450601132" duration="2819000" />
+      <workItem from="1723545990820" duration="509000" />
+      <workItem from="1723622530289" duration="2631000" />
+      <workItem from="1724168508469" duration="323000" />
+      <workItem from="1724222339711" duration="460000" />
+      <workItem from="1725205098722" duration="3788000" />
     </task>
     <task id="LOCAL-00001" summary="Создание двух сервисов">
       <created>1723142832544</created>
@@ -165,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723144061602</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Правка неисправностей">
+      <option name="closed" value="true" />
+      <created>1723192119475</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723192119475</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -185,14 +261,19 @@
       <path value="$PROJECT_DIR$/process-payment" />
     </ignored-roots>
     <MESSAGE value="Создание двух сервисов" />
-    <option name="LAST_COMMIT_MESSAGE" value="Создание двух сервисов" />
+    <MESSAGE value="Правка неисправностей" />
+    <option name="LAST_COMMIT_MESSAGE" value="Правка неисправностей" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/analyse-payment/src/main/kotlin/ru/tbank/smartdata/analyse/payment/listener/DebeziumListener.kt</url>
-          <line>38</line>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$MAVEN_REPOSITORY$/io/debezium/debezium-core/2.7.0.Final/debezium-core-2.7.0.Final-sources.jar!/io/debezium/jdbc/JdbcConnection.java</url>
+          <line>891</line>
+          <properties class="io.debezium.jdbc.JdbcConnection" method="connection">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
